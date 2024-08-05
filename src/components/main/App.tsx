@@ -2,7 +2,7 @@ import React from 'react';
 
 function App() {
   return (
-    <div className="h-screen bg-desktop bg-center bg-cover">
+    <div className="h-screen bg-mobile bg-center bg-cover">
       
     </div>
   );
