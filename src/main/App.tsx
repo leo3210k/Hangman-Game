@@ -1,12 +1,11 @@
 import React from 'react';
 
-import logo from '../assets/images/icons/logo.svg';
+import Home from '../components/Home';
 
 function App() {
   return (
     <div>
-      <img src={logo} alt="" />
-      
+      <Home />
     </div>
   );
 }
