@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        governor_bay: "rgb(52, 74, 186)",
+        governor_bay: "#344ABA",
         governor_bay_transparent: "rgb(52, 74, 186, 0)",
         blush_pink: "#FE71FE",
         blush_pink_transparent: "rgb(52, 74, 186, 0)",
