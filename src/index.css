@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'MouseMemoirs';
+  src: url('assets/fonts/MouseMemoirs-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'MouseMemoirs', sans-serif;
 }
