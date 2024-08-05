@@ -11,7 +11,8 @@ module.exports = {
         malibu: "#7199FF"
       },
       boxShadow: {
-        home_container: "0px 6px 0px 8px #2463FF inset, 0px -8px 0px 4px #140E66 inset"
+        home_container: "0px 6px 0px 8px #2463FF inset, 0px -8px 0px 4px #140E66 inset",
+        home_play: "0px -12px 0px 11px #9D2DF5 inset, 0px -4px 0px 5px #243041 inset"
       },
       backgroundImage: {
         'desktop': "url('/src/assets/images/background/background-desktop.svg')",
