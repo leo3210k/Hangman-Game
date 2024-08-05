@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      colors: {
+        governor_bay: "#344ABA"
+      },
       backgroundImage: {
         'desktop': "url('/src/assets/images/background/background-desktop.svg')",
         'tablet': "url('/src/assets/images/background/background-tablet.svg')",
