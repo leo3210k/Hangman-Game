@@ -8,7 +8,7 @@ function Home() {
     <div className="h-screen flex justify-center items-center bg-mobile bg-center bg-cover">
       <div className="w-[90%] flex flex-col justify-center items-center bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-full">
         <img src={logo} alt="logo" />
-        <button className="p-16 rounded-full">
+        <button className="p-16 rounded-full bg-gradient-to-b from-blush_pink to-malibu">
           <img src={play} alt="play" />
         </button>
       </div>
