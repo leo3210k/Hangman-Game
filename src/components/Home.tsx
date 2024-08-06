@@ -15,7 +15,6 @@ function Home() {
           how to play
         </button>
       </div>
-      
     </div>
   );
 }
