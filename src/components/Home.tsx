@@ -6,7 +6,7 @@ import play from '../assets/images/icons/icon-play.svg';
 function Home() {
   return (
     <div className="h-screen flex justify-center items-center bg-mobile bg-center bg-cover">
-      <div className="relative w-[90%] flex flex-col justify-center items-center bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-[7.2rem]">
+      <div className="relative w-[90%] flex flex-col justify-center items-center gap-12 bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-[7.2rem] pt-40 pb-40">
         <img src={logo} alt="logo" className="absolute -top-20" />
         <button className="rounded-full bg-gradient-to-b from-blush_pink to-malibu shadow-home_play p-10">
           <img src={play} alt="play" />
