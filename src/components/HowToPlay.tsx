@@ -6,7 +6,7 @@ function HowToPlay() {
   return (
     <div className="h-screen flex justify-center items-center bg-mobile bg-center bg-cover">
       <div>
-        <img src={back} alt="back" />
+        <img src={back} alt="back" className="p-4" />
       </div>
     </div>
   );
