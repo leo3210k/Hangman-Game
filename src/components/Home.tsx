@@ -8,10 +8,10 @@ function Home() {
     <div className="h-screen flex justify-center items-center bg-mobile bg-center bg-cover">
       <div className="relative w-[90%] flex flex-col justify-center items-center bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-[7.2rem]">
         <img src={logo} alt="logo" className="absolute -top-20" />
-        <button className="p-10 rounded-full bg-gradient-to-b from-blush_pink to-malibu shadow-home_play">
+        <button className="rounded-full bg-gradient-to-b from-blush_pink to-malibu shadow-home_play p-10">
           <img src={play} alt="play" />
         </button>
-        <button className="px-6 py-3 text-4xl text-white tracking-wide bg-governor_bay shadow-home_how rounded-full uppercase">
+        <button className="text-4xl text-white tracking-wide bg-governor_bay shadow-home_how rounded-full uppercase px-6 py-3">
           how to play
         </button>
       </div>
