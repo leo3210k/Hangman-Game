@@ -6,7 +6,7 @@ function HowToPlay() {
   return (
     <div className="h-screen flex justify-center items-center bg-mobile bg-center bg-cover">
       <div>
-        <button className="bg-gradient-to-b from-blush_pink to-malibu p-4">
+        <button className="bg-gradient-to-b from-blush_pink to-malibu rounded-full p-4">
           <img src={back} alt="back" />
         </button>
       </div>
