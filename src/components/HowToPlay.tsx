@@ -1,9 +1,13 @@
 import React from 'react';
 
+import back from '../assets/images/icons/icon-back.svg';
+
 function HowToPlay() {
   return (
     <div className="h-screen flex justify-center items-center bg-mobile bg-center bg-cover">
-      Hello!! :D
+      <div>
+        <img src={back} alt="back" />
+      </div>
     </div>
   );
 }
