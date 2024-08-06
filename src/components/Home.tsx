@@ -11,7 +11,7 @@ function Home() {
         <button className="rounded-full bg-gradient-to-b from-blush_pink to-malibu shadow-home_play p-10">
           <img src={play} alt="play" />
         </button>
-        <button className="text-4xl text-white tracking-wide bg-governor_bay shadow-home_how rounded-full uppercase px-6 py-3">
+        <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-6 py-3">
           how to play
         </button>
       </div>
