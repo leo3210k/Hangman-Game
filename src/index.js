@@ -10,7 +10,6 @@ import './index.css';
 import App from './main/App.tsx';
 import Home from './components/Home.tsx';
 
-
 const router = createBrowserRouter([
   {
     path: "/",
