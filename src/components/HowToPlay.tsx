@@ -3,6 +3,14 @@ import React from 'react';
 import back from '../assets/images/icons/icon-back.svg';
 
 function HowToPlay() {
+  const ItemList = ({ number, title, text }: { number: string, title: string, text: string }) => {
+    return (
+      <div className="">
+        
+      </div>
+    )
+  }
+
   return (
     <div className="h-screen flex flex-col bg-mobile bg-center bg-cover px-6 pt-6">
       <div className="w-full flex justify-between items-center">
