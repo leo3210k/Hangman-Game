@@ -14,7 +14,8 @@ module.exports = {
       boxShadow: {
         home_container: "0px 6px 0px 8px #2463FF inset, 0px -8px 0px 4px #140E66 inset",
         home_play: "0px -12px 0px 11px #9D2DF5 inset, 0px -4px 0px 5px #243041 inset",
-        home_how: "0px 1px 0px 6px #3C74FF inset, 0px -2px 0px 3px #140E66 inset"
+        home_how: "0px 1px 0px 6px #3C74FF inset, 0px -2px 0px 3px #140E66 inset",
+        howtoplay_back: ""
       },
       backgroundImage: {
         'desktop': "url('/src/assets/images/background/background-desktop.svg')",
