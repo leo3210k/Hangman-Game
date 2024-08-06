@@ -9,6 +9,7 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 import App from './main/App.tsx';
 import Home from './components/Home.tsx';
+import HowToPlay from './components/HowToPlay.tsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "/howtoplay",
+        element: <HowToPlay />,
       }
     ]
   },
