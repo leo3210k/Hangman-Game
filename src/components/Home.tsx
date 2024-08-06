@@ -11,7 +11,7 @@ function Home() {
         <button className="p-10 rounded-full bg-gradient-to-b from-blush_pink to-malibu shadow-home_play">
           <img src={play} alt="play" />
         </button>
-        <button className="p-8 text-4xl text-white bg-blue_ribbon">
+        <button className="p-8 text-4xl text-white bg-blue_ribbon uppercase">
           how to play
         </button>
       </div>
