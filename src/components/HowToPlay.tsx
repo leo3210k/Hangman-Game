@@ -8,7 +8,7 @@ function HowToPlay() {
       <div className="flex flex-col gap-4 bg-white p-8">
         <div className="flex gap-8">
           <h2 className="text-blue_ribbon">{ number }</h2>
-          <h3 className="text-governor_bay tracking-wide uppercase">{ title }</h3>
+          <h3 className="text-2xl text-governor_bay tracking-wide uppercase">{ title }</h3>
         </div>
         <span className="text-purple_mountains_majesty tracking-wide">{ text }</span>
       </div>
