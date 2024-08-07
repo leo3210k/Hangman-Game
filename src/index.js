@@ -10,6 +10,7 @@ import './index.css';
 import App from './main/App.tsx';
 import Home from './components/Home.tsx';
 import HowToPlay from './components/HowToPlay.tsx';
+import PickCategory from './components/PickCategory.tsx';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,11 @@ const router = createBrowserRouter([
       {
         path: "/howtoplay",
         element: <HowToPlay />,
-      }
+      },
+      {
+        path: "/pickcategory",
+        element: <PickCategory />,
+      },
     ]
   },
 ]);
