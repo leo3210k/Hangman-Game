@@ -8,9 +8,9 @@ function HowToPlay() {
       <div className="flex flex-col gap-4 bg-white p-8">
         <div className="flex gap-8">
           <h2 className="text-governor_bay">{ number }</h2>
-          <h3 className="text-blue_ribbon uppercase">{ title }</h3>
+          <h3 className="text-blue_ribbon tracking-wide uppercase">{ title }</h3>
         </div>
-        <span>{ text }</span>
+        <span className="">{ text }</span>
       </div>
     )
   }
