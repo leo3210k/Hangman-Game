@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import back from '../assets/images/icons/icon-back.svg';
 
-function PickaCategory() {
+function PickCategory() {
   const categories = [
     "movies",
     "tv shows",
@@ -29,4 +29,4 @@ function PickaCategory() {
   );
 }
 
-export default PickaCategory;
+export default PickCategory;
