@@ -6,7 +6,10 @@ function HowToPlay() {
   const ItemList = ({ number, title, text }: { number: string, title: string, text: string }) => {
     return (
       <div className="flex flex-col gap-4 bg-white p-8">
-        <div className="flex"></div>
+        <div className="flex">
+          <h2>{ number }</h2>
+          <h3>{ title }</h3>
+        </div>
       </div>
     )
   }
