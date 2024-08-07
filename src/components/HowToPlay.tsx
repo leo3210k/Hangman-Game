@@ -17,7 +17,7 @@ function HowToPlay() {
 
   return (
     <div className="h-screen bg-mobile bg-center bg-cover">
-      <div className="flex flex-col gap-14 bg-gradient-to-b from-black_rock to-deep_koamaru px-6 pt-6 pb-7">
+      <div className="flex flex-col gap-14 bg-gradient-to-b from-black_rock to-deep_koamaru px-6 pt-6 pb-8">
         <div className="w-full flex justify-between items-center">
           <button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3">
             <img src={back} alt="back" className="w-6" />
