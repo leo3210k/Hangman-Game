@@ -13,7 +13,7 @@ function Game() {
               <img src={back} alt="back" className="w-6" />
             </button>
           </Link>
-          <h1 className="text-5xl text-white bg-clip-text tracking-wider">Movies</h1>
+          <h1 className="text-5xl text-white bg-clip-text">Movies</h1>
         </div>
       </div>
     </div>
