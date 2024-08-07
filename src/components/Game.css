@@ -1,0 +1,6 @@
+progress::-webkit-progress-bar {
+  border-radius: 1rem;
+}
+progress::-webkit-progress-value {
+  border-radius: 1rem;
+}
