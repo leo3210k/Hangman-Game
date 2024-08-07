@@ -10,7 +10,7 @@ function HowToPlay() {
           <h2 className="text-governor_bay">{ number }</h2>
           <h3 className="text-blue_ribbon tracking-wide uppercase">{ title }</h3>
         </div>
-        <span className="">{ text }</span>
+        <span className="text-purple_mountains_majesty">{ text }</span>
       </div>
     )
   }
