@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import logo from '../assets/images/icons/logo.svg';
 import play from '../assets/images/icons/icon-play.svg';
@@ -11,9 +12,11 @@ function Home() {
         <button className="rounded-full bg-gradient-to-b from-blush_pink to-malibu shadow-home_play p-10">
           <img src={play} alt="play" />
         </button>
-        <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-6 py-3">
-          how to play
-        </button>
+        <Link to="/howtoplay">
+          <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-6 py-3">
+            how to play
+          </button>
+        </Link>
       </div>
     </div>
   );
