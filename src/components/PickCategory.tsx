@@ -27,7 +27,7 @@ function PickCategory() {
         <div className="flex flex-col gap-4">
           {categories.map(category => {
             return (
-              <button className="">{ category }</button>
+              <button className="py-6">{ category }</button>
             )
           })}
         </div>
