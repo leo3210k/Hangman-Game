@@ -5,8 +5,8 @@ import back from '../assets/images/icons/icon-back.svg';
 
 function PickaCategory() {
   return (
-    <div className="h-screen bg-gradient-to-b from-black_rock to-deep_koamaru">
-      <div className="flex flex-col gap-14 bg-gradient-to-b from-black_rock to-deep_koamaru px-6 pt-6 pb-8">
+    <div className="h-screen bg-gradient-to-b from-black_rock to-deep_koamaru px-6 pt-6 pb-8">
+      <div className="flex flex-col gap-14 bg-gradient-to-b from-black_rock to-deep_koamaru ">
         <div className="w-full flex justify-between items-center">
           <Link to="/">
             <button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3">
