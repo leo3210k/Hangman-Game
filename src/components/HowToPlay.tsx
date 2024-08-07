@@ -21,7 +21,7 @@ function HowToPlay() {
         <button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3">
           <img src={back} alt="back" className="w-6" />
         </button>
-        <h1 className="text-5xl text-transparent bg-clip-text tracking-wide bg-gradient-to-b from-malibu to-white capitalize">how to play</h1>
+        <h1 className="text-5xl text-transparent bg-clip-text tracking-wider bg-gradient-to-b from-malibu to-white capitalize">how to play</h1>
       </div>
       <div className="flex flex-col gap-6">
         <ItemList number="01" title="Pick a category" text="First, choose a word category, like animals or movies. The computer then randomly selects a secret word from that topic and shows you blanks for each letter of the word."/>
