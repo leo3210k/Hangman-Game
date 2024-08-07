@@ -11,7 +11,7 @@ module.exports = {
         malibu: "#7199FF",
         blue_ribbon: "#2463FF",
         purple_mountains_majesty: "#887DC0",
-        deep_koamaru: "#261676",
+        deep_koamaru: "#151278",
         black_rock: "#1A043A"
       },
       boxShadow: {
