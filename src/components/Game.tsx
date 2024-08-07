@@ -20,7 +20,7 @@ function Game() {
           </div>
           <div className="flex items-center gap-4">
             <progress value="100" max="100" className="w-16 h-3 bg-white rounded-full p-[2px]"></progress>
-            <img src={heart} alt="heart" className="w-6" />
+            <img src={heart} alt="heart" className="w-10" />
           </div>
         </div>
       </div>
