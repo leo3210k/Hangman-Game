@@ -19,7 +19,7 @@ function Game() {
             <h1 className="text-5xl text-white bg-clip-text">Movies</h1>
           </div>
           <div className="flex items-center gap-4">
-            <progress className="progress"></progress>
+            <progress className="w-16 h-3 bg-white rounded-3xl"></progress>
             <img src={heart} alt="heart" className="w-6" />
           </div>
         </div>
