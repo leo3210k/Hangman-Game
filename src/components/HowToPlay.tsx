@@ -6,7 +6,7 @@ function HowToPlay() {
   const ItemList = ({ number, title, text }: { number: string, title: string, text: string }) => {
     return (
       <div className="flex flex-col gap-4 bg-white p-8">
-        <div className="flex">
+        <div className="flex gap-8">
           <h2 className="text-governor_bay">{ number }</h2>
           <h3 className="text-blue_ribbon uppercase">{ title }</h3>
         </div>
