@@ -5,7 +5,7 @@ import back from '../assets/images/icons/icon-back.svg';
 function HowToPlay() {
   const ItemList = ({ number, title, text }: { number: string, title: string, text: string }) => {
     return (
-      <div className="bg-white">
+      <div className="bg-white p-8">
         
       </div>
     )
