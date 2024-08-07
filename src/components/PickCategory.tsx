@@ -27,7 +27,9 @@ function PickCategory() {
         <div className="flex flex-col gap-4">
           {categories.map(category => {
             return (
-              <button className="text-2xl text-white tracking-wider bg-blue_ribbon hover:bg-blue_ribbon_transparent rounded-full shadow-category uppercase py-5">{ category }</button>
+              <Link to="/game">
+                <button className="text-2xl text-white tracking-wider bg-blue_ribbon hover:bg-blue_ribbon_transparent rounded-full shadow-category uppercase py-5">{ category }</button>
+              </Link>
             )
           })}
         </div>
