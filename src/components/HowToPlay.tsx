@@ -5,7 +5,7 @@ import back from '../assets/images/icons/icon-back.svg';
 function HowToPlay() {
   const ItemList = ({ number, title, text }: { number: string, title: string, text: string }) => {
     return (
-      <div className="flex flex-col gap-4 bg-white p-8">
+      <div className="flex flex-col gap-4 bg-white rounded-3xl p-8">
         <div className="flex items-center gap-8">
           <h2 className="text-2xl text-blue_ribbon">{ number }</h2>
           <h3 className="text-2xl text-governor_bay tracking-wide uppercase">{ title }</h3>
