@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import './Game.css';
 import menu from '../assets/images/icons/icon-menu.svg'; 
 import heart from '../assets/images/icons/icon-heart.svg'; 
 
@@ -18,7 +19,7 @@ function Game() {
             <h1 className="text-5xl text-white bg-clip-text">Movies</h1>
           </div>
           <div className="flex items-center gap-4">
-            <progress></progress>
+            <progress className="progress"></progress>
             <img src={heart} alt="heart" className="w-6" />
           </div>
         </div>
