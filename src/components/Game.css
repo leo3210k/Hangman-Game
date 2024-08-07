@@ -1,6 +1,9 @@
 progress::-webkit-progress-bar {
+  padding: 2px;
   border-radius: 1rem;
+  background-color: white;
 }
 progress::-webkit-progress-value {
   border-radius: 1rem;
+  background-color: #151278;
 }
