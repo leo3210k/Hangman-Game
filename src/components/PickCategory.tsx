@@ -24,7 +24,7 @@ function PickCategory() {
           </Link>
           <h1 className="text-[2.6rem] text-transparent bg-clip-text tracking-wider bg-gradient-to-b from-malibu to-white">Pick a Category</h1>
         </div>
-        <div>
+        <div className="flex flex-col gap-4">
           {categories.map(category => {
             return (
               <button className="">{ category }</button>
