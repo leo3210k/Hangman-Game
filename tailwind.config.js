@@ -10,6 +10,7 @@ module.exports = {
         blush_pink_transparent: "rgb(52, 74, 186, 0)",
         malibu: "#7199FF",
         blue_ribbon: "#2463FF",
+        blue_ribbon_transparent: "rgb(36, 99, 255, .60)",
         purple_mountains_majesty: "#887DC0",
         deep_koamaru: "#151278",
         black_rock: "#1A043A"
