@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import back from '../assets/images/icons/icon-back.svg';
+
 function PickaCategory() {
   return (
     <div className="h-screen bg-gradient-to-b from-black_rock to-deep_koamaru">
