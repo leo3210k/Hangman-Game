@@ -10,6 +10,7 @@ function HowToPlay() {
           <h2 className="text-governor_bay">{ number }</h2>
           <h3 className="text-blue_ribbon uppercase">{ title }</h3>
         </div>
+        <span>{ text }</span>
       </div>
     )
   }
