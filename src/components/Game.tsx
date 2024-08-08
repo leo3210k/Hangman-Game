@@ -49,7 +49,7 @@ function Game() {
             );
           })}
         </div>
-        <div className="flex justify-center items-center flex-wrap gap-4">
+        <div className="flex justify-center items-center flex-wrap gap-3">
           {alphabet.map((letter, i) => {
             return (
               <div className="text-2xl text-deep_koamaru bg-white rounded-full px-4 py-3" key={i + letter}>{letter}</div>
