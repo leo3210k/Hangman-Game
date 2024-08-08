@@ -2,7 +2,15 @@ progress::-webkit-progress-bar {
   border-radius: 1rem;
   background-color: white;
 }
+
 progress::-webkit-progress-value {
   border-radius: 1rem;
   background-color: #151278;
 }
+
+.animation {
+  animation: checked .6s;
+}
+
+
+
