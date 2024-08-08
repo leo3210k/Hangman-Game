@@ -12,5 +12,22 @@ progress::-webkit-progress-value {
   animation: checked .6s;
 }
 
+@keyframes checked {
+  0% {
+    opacity: 0;
+    scale: .5;
+  }
+  50% {
+    opacity: 1;
+    scale: 1.1;
+  }
 
+  75% {
+    scale: .75;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
 
