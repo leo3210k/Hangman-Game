@@ -37,12 +37,12 @@ function Game() {
             <img src={heart} alt="heart" className="w-10" />
           </div>
         </div>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap gap-4">
           {randomMovie.split("_").map((word, i) => {
             return (
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap">
                 {word.split("").map((letter, i) => {
-                  return <div key={word + i}>{word}</div>;
+                  return <div className="" key={letter + i}>{letter}</div>;
                 })}
               </div>
             );
