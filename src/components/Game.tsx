@@ -42,7 +42,7 @@ function Game() {
             return (
               <div className="flex flex-wrap" key={word + i}>
                 {word.split("").map((letter, i) => {
-                  return <div className="w-7 h-28" key={letter + i}>{letter}</div>;
+                  return <div className="w-7 h-28 bg-blue_ribbon shadow-category" key={letter + i}>{letter}</div>;
                 })}
               </div>
             );
