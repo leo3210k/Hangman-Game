@@ -42,7 +42,13 @@ function Game() {
             .split("_")
             .map((word, i) => {
               return (
-                <div key={word + i}>{ word }</div>
+                word
+                  .split("")
+                  .map((letter, i) => {
+                    return(
+                      <div key={word + i}>{ word }</div>
+                    )
+                  })
               )
             })}
         </div>
