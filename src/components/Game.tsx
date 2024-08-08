@@ -77,7 +77,7 @@ function Game() {
           </div>
         </div>
         <Letters randomMovie={randomMovie} />
-        <Alphabet />
+        <Alphabet onClick={verifyLetter}/>
       </div>
     </div>
   );
