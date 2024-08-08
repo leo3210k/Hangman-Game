@@ -49,7 +49,9 @@ function Game() {
             );
           })}
         </div>
-        
+        <div className="flex justify-center items-center flex-wrap gap-4">
+          
+        </div>
       </div>
     </div>
   );
