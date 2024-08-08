@@ -5,6 +5,7 @@ import './Game.css';
 import menu from '../assets/images/icons/icon-menu.svg'; 
 import heart from '../assets/images/icons/icon-heart.svg'; 
 import hangmanData from '../assets/json/words.json';
+import { alphabet } from './utils/alphabet';
 
 function Game() {
   const data: HangmanData = hangmanData;
@@ -48,6 +49,7 @@ function Game() {
             );
           })}
         </div>
+        
       </div>
     </div>
   );
