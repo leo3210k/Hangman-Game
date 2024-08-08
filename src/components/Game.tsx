@@ -23,7 +23,7 @@ function Game() {
 
   return (
     <div className="min-h-svh bg-gradient-to-b from-black_rock to-deep_koamaru">
-      <div className="flex flex-col justify-between gap-14 px-6 pt-6 pb-8">
+      <div className="min-h-svh flex flex-col justify-between gap-14 px-6 pt-6 pb-8">
         <div className="w-full flex justify-between items-center gap-4">
           <div className="flex items-center gap-4">
             <Link to="/">
