@@ -7,6 +7,6 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
   },
-  "files": ["global.d.ts"]
 }
