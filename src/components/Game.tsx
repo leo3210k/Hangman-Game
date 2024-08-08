@@ -38,19 +38,15 @@ function Game() {
           </div>
         </div>
         <div className="flex flex-wrap">
-          {randomMovie
-            .split("_")
-            .map((word, i) => {
-              return (
-                word
-                  .split("")
-                  .map((letter, i) => {
-                    return(
-                      <div key={word + i}>{ word }</div>
-                    )
-                  })
-              )
-            })}
+          {randomMovie.split("_").map((word, i) => {
+            return (
+              <div>
+                {word.split("").map((letter, i) => {
+                  return <div key={word + i}>{word}</div>;
+                })}
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
