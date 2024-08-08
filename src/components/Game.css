@@ -31,3 +31,7 @@ progress::-webkit-progress-value {
   }
 }
 
+button:disabled,
+button[disabled] {
+  opacity: .25;
+}
