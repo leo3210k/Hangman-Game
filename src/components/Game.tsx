@@ -40,7 +40,7 @@ function Game() {
         <div className="flex flex-wrap gap-4">
           {randomMovie.split("_").map((word, i) => {
             return (
-              <div className="flex flex-wrap">
+              <div className="flex flex-wrap" key={word + i}>
                 {word.split("").map((letter, i) => {
                   return <div className="" key={letter + i}>{letter}</div>;
                 })}
