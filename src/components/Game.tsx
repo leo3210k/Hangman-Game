@@ -58,7 +58,9 @@ function Game() {
     }
   }
 
-  
+  function disableButton(element: any) {
+    element.target.disabled = true;
+  }
 
   return (
     <div className="min-h-svh bg-gradient-to-b from-black_rock to-deep_koamaru">
