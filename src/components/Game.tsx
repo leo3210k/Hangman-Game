@@ -64,7 +64,7 @@ function Game() {
             );
           })}
         </div>
-        <div className="">
+        <div className="flex justify-center items-center flex-wrap">
           {alphabet.map((letter, i) => {
             return (
               <button className="" key={i + letter}
