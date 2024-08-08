@@ -25,7 +25,17 @@ function Game() {
     return randomMovie.includes(letter);
   }
 
-  
+  function verifyLetter(element: any) {
+    const letter = element.target.innerHTML.toLowerCase();
+
+    if(randomMovie.includes(letter)) {
+      showLetter(letter);
+    } else {
+      decreaseLife();
+    }
+
+    disableButton(element);
+  }
 
   
 
