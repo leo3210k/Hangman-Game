@@ -6,6 +6,7 @@ import menu from '../assets/images/icons/icon-menu.svg';
 import heart from '../assets/images/icons/icon-heart.svg'; 
 import hangmanData from '../assets/json/words.json';
 import { alphabet } from './utils/alphabet';
+import Letters from './Letters';
 
 function Game() {
   const data: HangmanData = hangmanData;
@@ -79,22 +80,7 @@ function Game() {
             <img src={heart} alt="heart" className="w-10" />
           </div>
         </div>
-        <div className="flex justify-center items-center flex-wrap gap-4">
-          {randomMovie.split("_").map((word, i) => {
-            return (
-              <div className="flex flex-wrap gap-2" key={word + i}>
-                {word.split("").map((letter, i) => {
-                  return (
-                    <div className="animation text-4xl text-transparent bg-blue_ribbon rounded-full shadow-category uppercase px-4 py-4" key={letter + i}
-                      data-letter={letter}>
-                      {letter}
-                    </div>
-                  )
-                })}
-              </div>
-            );
-          })}
-        </div>
+        <Letters randomMovie={randomMovie} />
         <div className="flex justify-center items-center flex-wrap gap-3">
           {alphabet.map((letter, i) => {
             return (
