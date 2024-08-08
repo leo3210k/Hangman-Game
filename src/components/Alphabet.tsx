@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { alphabet } from './utils/alphabet';
+
 function Alphabet() {
   return (
     <div className="flex justify-center items-center flex-wrap gap-3">

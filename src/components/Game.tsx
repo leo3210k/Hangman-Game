@@ -5,7 +5,6 @@ import './Game.css';
 import menu from '../assets/images/icons/icon-menu.svg'; 
 import heart from '../assets/images/icons/icon-heart.svg'; 
 import hangmanData from '../assets/json/words.json';
-import { alphabet } from './utils/alphabet';
 import Letters from './Letters';
 import Alphabet from './Alphabet';
 
