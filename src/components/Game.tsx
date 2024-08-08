@@ -40,7 +40,7 @@ function Game() {
         <div className="flex justify-center items-center flex-wrap gap-4">
           {randomMovie.split("_").map((word, i) => {
             return (
-              <div className="flex flex-wrap" key={word + i}>
+              <div className="flex flex-wrap content-center gap-2" key={word + i}>
                 {word.split("").map((letter, i) => {
                   return <div className="text-4xl text-white bg-blue_ribbon rounded-full shadow-category uppercase px-4 py-5" key={letter + i}>{letter}</div>;
                 })}
