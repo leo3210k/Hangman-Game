@@ -67,7 +67,7 @@ function Game() {
         <div className="flex justify-center items-center flex-wrap gap-3">
           {alphabet.map((letter, i) => {
             return (
-              <button className="text-2xl text-deep_koamaru" key={i + letter}
+              <button className="text-2xl text-deep_koamaru bg-white" key={i + letter}
                 onClick={e => verifyLetter(e)}>
                 {letter}
               </button>
