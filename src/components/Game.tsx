@@ -64,7 +64,15 @@ function Game() {
             );
           })}
         </div>
-        
+        <div className="">
+          {alphabet.map((letter, i) => {
+            return (
+              <button className="" key={i + letter}>
+                {letter}
+              </button>
+            )
+          })}
+        </div>
       </div>
     </div>
   );
