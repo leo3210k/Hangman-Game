@@ -37,7 +37,16 @@ function Game() {
     disableButton(element);
   }
 
-  
+  function showLetter(letter: string) {
+    const elements = document.querySelectorAll(`[data-letter="${letter}"]`)
+
+    elements.forEach(element => {
+      (element as HTMLElement).classList.remove('animation');
+      void (element as HTMLElement).offsetWidth;
+      (element as HTMLElement).classList.add('animation');
+      (element as HTMLElement).style.color = "white";
+    })
+  }
 
   
 
