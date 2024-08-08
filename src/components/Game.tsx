@@ -39,7 +39,6 @@ function Game() {
         </div>
         <div className="flex flex-wrap">
           {randomMovie
-            .replace(/_/g, " ")
             .split("")
             .map((letter, i) => {
               return (
