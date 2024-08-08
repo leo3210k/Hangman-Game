@@ -67,7 +67,8 @@ function Game() {
         <div className="">
           {alphabet.map((letter, i) => {
             return (
-              <button className="" key={i + letter}>
+              <button className="" key={i + letter}
+                onClick={e => verifyLetter(e)}>
                 {letter}
               </button>
             )
