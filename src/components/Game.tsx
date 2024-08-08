@@ -22,10 +22,6 @@ function Game() {
   const category = location.state.some as keyof HangmanWords;
   const randomMovie = getRandomWord(category);
 
-  function checkLetterInWord(letter: string): boolean {
-    return randomMovie.includes(letter);
-  }
-
   function verifyLetter(element: any) {
     const letter = element.target.innerHTML.toLowerCase();
 
