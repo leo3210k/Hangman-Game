@@ -52,7 +52,7 @@ function Game() {
         <div className="flex justify-center items-center flex-wrap gap-4">
           {alphabet.map((letter, i) => {
             return (
-              <div className="bg-white px-3 py-3">{letter}</div>
+              <div className="bg-white rounded-full px-3 py-3">{letter}</div>
             )
           })}
         </div>
