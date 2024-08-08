@@ -22,7 +22,7 @@ function Game() {
   const randomMovie = getRandomWord(category);
 
   return (
-    <div className="bg-gradient-to-b from-black_rock to-deep_koamaru px-6 pt-6 pb-8">
+    <div className="min-h-svh bg-gradient-to-b from-black_rock to-deep_koamaru px-6 pt-6 pb-8">
       <div className="flex flex-col justify-between gap-14">
         <div className="w-full flex justify-between items-center gap-4">
           <div className="flex items-center gap-4">
