@@ -48,7 +48,15 @@ function Game() {
     })
   }
 
-  
+  function decreaseLife() {
+    const progress = document.querySelector('progress');
+
+    if(progress) { 
+      progress.value = Math.max(progress.value - 15, 0);
+
+      if(progress.value == 0) console.log("Game Over!");
+    }
+  }
 
   
 
