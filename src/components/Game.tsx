@@ -21,6 +21,16 @@ function Game() {
   const category = location.state.some as keyof HangmanWords;
   const randomMovie = getRandomWord(category);
 
+  
+
+  
+
+  
+
+  
+
+  
+
   return (
     <div className="min-h-svh bg-gradient-to-b from-black_rock to-deep_koamaru">
       <div className="min-h-svh flex flex-col justify-between gap-14 px-6 pt-6 pb-8">
@@ -43,19 +53,18 @@ function Game() {
             return (
               <div className="flex flex-wrap gap-2" key={word + i}>
                 {word.split("").map((letter, i) => {
-                  return <div className="text-4xl text-white bg-blue_ribbon rounded-full shadow-category uppercase px-4 py-4" key={letter + i}>{letter}</div>;
+                  return (
+                    <div className="" key={letter + i}
+                      data-letter={letter}>
+                      {letter}
+                    </div>
+                  )
                 })}
               </div>
             );
           })}
         </div>
-        <div className="flex justify-center items-center flex-wrap gap-3">
-          {alphabet.map((letter, i) => {
-            return (
-              <div className="text-2xl text-deep_koamaru bg-white rounded-full px-4 py-3" key={i + letter}>{letter}</div>
-            )
-          })}
-        </div>
+        
       </div>
     </div>
   );
