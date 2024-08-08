@@ -54,7 +54,7 @@ function Game() {
               <div className="flex flex-wrap gap-2" key={word + i}>
                 {word.split("").map((letter, i) => {
                   return (
-                    <div className="" key={letter + i}
+                    <div className="animation" key={letter + i}
                       data-letter={letter}>
                       {letter}
                     </div>
