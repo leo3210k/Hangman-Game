@@ -60,7 +60,9 @@ function Game() {
     if(progress) { 
       progress.value = Math.max(progress.value - 15, 0);
 
-      if(progress.value === 0) setOpen(true);
+      if(progress.value === 0) {
+        gameOver();
+      }
     }
   }
 
@@ -68,6 +70,15 @@ function Game() {
     element.target.disabled = true;
   }
 
+  function gameOver() {
+    chosenWord?.split("").forEach(letter => {
+      showLetter(letter);
+    })
+
+    setTimeout(() => {
+      setOpen(true);
+    }, 3000)
+  }
 
   return (
     <div className="min-h-svh bg-gradient-to-b from-black_rock to-deep_koamaru">
