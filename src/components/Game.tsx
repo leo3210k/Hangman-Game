@@ -22,12 +22,12 @@ function Game() {
   const location = useLocation();
 
   const category = location.state.category as keyof HangmanWords;
-  const randomMovie = getRandomWord(category);
+  const chosenWord = getRandomWord(category);
 
   function verifyLetter(element: any) {
     const letter = element.target.innerHTML.toLowerCase();
 
-    if(randomMovie.includes(letter)) {
+    if(chosenWord.includes(letter)) {
       showLetter(letter);
     } else {
       decreaseLife();
@@ -75,7 +75,7 @@ function Game() {
             <img src={heart} alt="heart" className="w-10" />
           </div>
         </div>
-        <Letters randomMovie={randomMovie} />
+        <Letters chosenWord={chosenWord} />
         <Alphabet onClick={verifyLetter}/>
       </div>
     </div>
