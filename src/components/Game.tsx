@@ -13,16 +13,16 @@ function Game() {
   
   const data: HangmanData = hangmanData;
 
+  const location = useLocation();
+
+  const category = location.state.category as keyof HangmanWords;
+  const chosenWord = getRandomWord(category);
+
   function getRandomWord(category: keyof HangmanWords): string {
     const words = data.words[category];
     const randomIndex = Math.floor(Math.random() * words.length);
     return words[randomIndex];
   }
-
-  const location = useLocation();
-
-  const category = location.state.category as keyof HangmanWords;
-  const chosenWord = getRandomWord(category);
 
   function verifyLetter(element: any) {
     const letter = element.target.innerHTML.toLowerCase();
