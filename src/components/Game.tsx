@@ -21,7 +21,7 @@ function Game() {
 
   const location = useLocation();
 
-  const category = location.state.some as keyof HangmanWords;
+  const category = location.state.category as keyof HangmanWords;
   const randomMovie = getRandomWord(category);
 
   function verifyLetter(element: any) {
