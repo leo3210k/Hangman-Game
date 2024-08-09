@@ -51,7 +51,7 @@ function Game() {
     if(progress) { 
       progress.value = Math.max(progress.value - 15, 0);
 
-      if(progress.value === 0) console.log("Game Over!");
+      if(progress.value === 0) setOpen(true);
     }
   }
 
