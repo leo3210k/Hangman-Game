@@ -19,7 +19,7 @@ function Modal({ open, setOpen }: { open: boolean, setOpen: any }) {
           <img src={menu} alt="menu" className="w-6" />
         </button>
       </DialogTrigger>
-      <DialogContent className="w-[80%] bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-[4.5rem] py-32">
+      <DialogContent className="w-[80%] bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-[4.5rem] py-28">
         <DialogHeader className="flex flex-col justify-center items-center">
           <DialogTitle className="absolute text-8xl font-normal text-transparent tracking-wide bg-gradient-to-b from-malibu to-white bg-clip-text top-0 -mt-14">You Lose</DialogTitle>
           <DialogDescription className="flex flex-col gap-14">
