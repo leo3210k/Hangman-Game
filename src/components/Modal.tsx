@@ -18,9 +18,9 @@ function Modal({ open, setOpen }: { open: boolean, setOpen: any }) {
           <img src={menu} alt="menu" className="w-6" />
         </button>
       </DialogTrigger>
-      <DialogContent>
-        <DialogHeader>
-          <DialogTitle>Are you absolutely sure?</DialogTitle>
+      <DialogContent className="w-[80%] bg-gradient-to-b from-governor_bay to-governor_bay_transparent">
+        <DialogHeader className="flex flex-col justify-center items-center">
+          <DialogTitle className="absolute text-6xl uppercase -mt-32">you lose</DialogTitle>
           <DialogDescription>
             This action cannot be undone. This will permanently delete your account
             and remove your data from our servers.
