@@ -34,7 +34,7 @@ function Modal({ open, setOpen }: { open: boolean, setOpen: any }) {
               </button>
             </Link>
             <Link to="/howtoplay">
-              <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-6 py-3">
+              <button className="text-4xl text-white tracking-wide bg-gradient-to-b from-blush_pink to-malibu shadow-home_how rounded-full uppercase px-6 py-3">
                 quit game
               </button>
             </Link>
