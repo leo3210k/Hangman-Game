@@ -13,7 +13,7 @@ import menu from '../assets/images/icons/icon-menu.svg';
 function Modal({ open, setOpen }: { open: any, setOpen: any }) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger>
+      <DialogTrigger asChild>
         <button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3">
           <img src={menu} alt="menu" className="w-6" />
         </button>
