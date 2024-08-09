@@ -9,6 +9,7 @@ import {
   DialogTrigger,
 } from "./utils/dialog"
 import menu from '../assets/images/icons/icon-menu.svg'; 
+import { Link } from 'react-router-dom';
 
 function Modal({ open, setOpen }: { open: boolean, setOpen: any }) {
   return (
@@ -22,8 +23,21 @@ function Modal({ open, setOpen }: { open: boolean, setOpen: any }) {
         <DialogHeader className="flex flex-col justify-center items-center">
           <DialogTitle className="absolute text-6xl text-transparent tracking-wide bg-gradient-to-b from-malibu to-white bg-clip-text -mt-32">You Lose</DialogTitle>
           <DialogDescription>
-            This action cannot be undone. This will permanently delete your account
-            and remove your data from our servers.
+            <Link to="/howtoplay">
+              <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-6 py-3">
+                play again
+              </button>
+            </Link>
+            <Link to="/pickcategory">
+              <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-6 py-3">
+                new category
+              </button>
+            </Link>
+            <Link to="/howtoplay">
+              <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-6 py-3">
+                quit game
+              </button>
+            </Link>
           </DialogDescription>
         </DialogHeader>
       </DialogContent>
