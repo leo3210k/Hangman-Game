@@ -8,11 +8,16 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "./utils/dialog"
+import menu from '../assets/images/icons/icon-menu.svg'; 
 
-function Modal() {
+function Modal({ open, setOpen }: { open: any, setOpen: any }) {
   return (
-    <Dialog>
-      <DialogTrigger>Open</DialogTrigger>
+    <Dialog open={open} onOpenChange={setOpen}>
+      <DialogTrigger>
+        <button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3">
+          <img src={menu} alt="menu" className="w-6" />
+        </button>
+      </DialogTrigger>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>Are you absolutely sure?</DialogTitle>
