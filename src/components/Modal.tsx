@@ -20,7 +20,7 @@ function Modal({ open, setOpen }: { open: boolean, setOpen: any }) {
       </DialogTrigger>
       <DialogContent className="w-[80%] bg-gradient-to-b from-governor_bay to-governor_bay_transparent">
         <DialogHeader className="flex flex-col justify-center items-center">
-          <DialogTitle className="absolute text-6xl text-transparent tracking-wide uppercase bg-gradient-to-b from-malibu to-white bg-clip-text -mt-32">you lose</DialogTitle>
+          <DialogTitle className="absolute text-6xl text-transparent tracking-wider bg-gradient-to-b from-malibu to-white bg-clip-text -mt-32">you lose</DialogTitle>
           <DialogDescription>
             This action cannot be undone. This will permanently delete your account
             and remove your data from our servers.
