@@ -21,7 +21,7 @@ function Modal({ open, setOpen }: { open: boolean, setOpen: any }) {
       </DialogTrigger>
       <DialogContent className="w-[80%] bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-[4.5rem] py-32">
         <DialogHeader className="flex flex-col justify-center items-center">
-          <DialogTitle className="absolute text-8xl text-transparent tracking-wide bg-gradient-to-b from-malibu to-white bg-clip-text top-0 -mt-10">You Lose</DialogTitle>
+          <DialogTitle className="absolute text-8xl text-transparent tracking-wide bg-gradient-to-b from-malibu to-white bg-clip-text top-0 -mt-14">You Lose</DialogTitle>
           <DialogDescription>
             <Link to="/howtoplay">
               <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-6 py-3">
