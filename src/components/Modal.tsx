@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import {
   Dialog,
@@ -9,7 +10,6 @@ import {
   DialogTrigger,
 } from "./utils/dialog"
 import menu from '../assets/images/icons/icon-menu.svg'; 
-import { Link } from 'react-router-dom';
 
 function Modal({ open, setOpen }: { open: boolean, setOpen: any }) {
   return (
