@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Letters({ chosenWord }: { chosenWord: string }) {
+function Letters({ chosenWord }: { chosenWord: string | null }) {
   return (
     <div className="flex justify-center items-center flex-wrap gap-4">
-      {chosenWord.split("_").map((word, i) => {
+      {chosenWord?.split("_").map((word, i) => {
         return (
           <div className="flex flex-wrap gap-2" key={word + i}>
             {word.split("").map((letter, i) => {

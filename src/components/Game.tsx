@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import './Game.css';
@@ -10,13 +10,20 @@ import Modal from './Modal';
 
 function Game() {
   const [open, setOpen] = useState(false);
+
+  const [chosenWord, setChosenWord] = useState<string | null>(null);
   
   const data: HangmanData = hangmanData;
-
+  
   const location = useLocation();
-
-  const category = location.state.category as keyof HangmanWords;
-  const chosenWord = getRandomWord(category);
+  
+  useEffect(() => {
+    if (location.state?.category) {
+      const category = location.state.category as keyof HangmanWords;
+      const word = getRandomWord(category);
+      setChosenWord(word);
+    }
+  }, [location.state?.category]);
 
   function getRandomWord(category: keyof HangmanWords): string {
     const words = data.words[category];
@@ -27,7 +34,7 @@ function Game() {
   function verifyLetter(element: any) {
     const letter = element.target.innerHTML.toLowerCase();
 
-    if(chosenWord.includes(letter)) {
+    if(chosenWord?.includes(letter)) {
       showLetter(letter);
     } else {
       decreaseLife();
