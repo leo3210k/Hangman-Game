@@ -33,7 +33,7 @@ function Modal({ open, setOpen }: { open: boolean, setOpen: any }) {
                 new category
               </button>
             </Link>
-            <Link to="/howtoplay">
+            <Link to="/">
               <button className="text-4xl text-white tracking-wide bg-gradient-to-b from-blush_pink to-malibu shadow-home_play rounded-full uppercase px-7 py-3">
                 quit game
               </button>
