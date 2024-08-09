@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 import './Game.css';
 import heart from '../assets/images/icons/icon-heart.svg'; 
