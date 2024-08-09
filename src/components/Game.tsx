@@ -9,6 +9,8 @@ import Alphabet from './Alphabet';
 import Modal from './Modal';
 
 function Game() {
+  const [open, setOpen] = useState(false);
+  
   const data: HangmanData = hangmanData;
 
   function getRandomWord(category: keyof HangmanWords): string {
@@ -59,7 +61,6 @@ function Game() {
     element.target.disabled = true;
   }
 
-  const [open, setOpen] = useState(false);
 
   return (
     <div className="min-h-svh bg-gradient-to-b from-black_rock to-deep_koamaru">
