@@ -10,7 +10,7 @@ import {
 } from "./utils/dialog"
 import menu from '../assets/images/icons/icon-menu.svg'; 
 
-function Modal({ open, setOpen }: { open: any, setOpen: any }) {
+function Modal({ open, setOpen }: { open: boolean, setOpen: any }) {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
