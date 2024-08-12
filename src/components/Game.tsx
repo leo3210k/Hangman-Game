@@ -8,9 +8,15 @@ import Letters from './Letters';
 import Alphabet from './Alphabet';
 import Modal from './Modal';
 
+enum modes {
+  Won,
+  Lost,
+  Playing
+}
+
 function Game() {
   const [openMenu, setOpenMenu] = useState(false);
-  const [lost, setLost] = useState(false);
+  const [mode, setMode] = useState<modes>(modes.Playing);
 
   const [chosenWord, setChosenWord] = useState<string | null>(null);
   
