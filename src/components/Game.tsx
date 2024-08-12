@@ -9,7 +9,7 @@ import Alphabet from './Alphabet';
 import Modal from './Modal';
 
 function Game() {
-  const [open, setOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
   const [chosenWord, setChosenWord] = useState<string | null>(null);
   
@@ -76,7 +76,7 @@ function Game() {
     })
 
     setTimeout(() => {
-      setOpen(true);
+      setOpenMenu(true);
     }, 2000)
   }
 
@@ -85,7 +85,7 @@ function Game() {
       <div className="min-h-svh flex flex-col justify-between gap-14 px-6 pt-6 pb-8">
         <div className="w-full flex justify-between items-center gap-4">
           <div className="flex items-center gap-4">
-            <Modal open={open} setOpen={setOpen}/>
+            <Modal openMenu={openMenu} setOpenMenu={setOpenMenu}/>
             <h1 className="text-5xl text-white bg-clip-text capitalize">{category.replace("_", " ")}</h1>
           </div>
           <div className="flex items-center gap-4">

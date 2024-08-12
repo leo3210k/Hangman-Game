@@ -11,9 +11,9 @@ import {
 } from "./utils/dialog"
 import menu from '../assets/images/icons/icon-menu.svg'; 
 
-function Modal({ open, setOpen }: { open: boolean, setOpen: any }) {
+function Modal({ openMenu, setOpenMenu }: { openMenu: boolean, setOpenMenu: any }) {
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog open={openMenu} onOpenChange={setOpenMenu}>
       <DialogTrigger asChild>
         <button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3">
           <img src={menu} alt="menu" className="w-6" />
