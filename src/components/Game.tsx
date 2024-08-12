@@ -63,7 +63,7 @@ function Game() {
       progress.value = Math.max(progress.value - 15, 0);
 
       if(progress.value === 0) {
-        gameOver();
+        gameOver(Modes.Lost);
       }
     }
   }
@@ -72,10 +72,12 @@ function Game() {
     element.target.disabled = true;
   }
 
-  function gameOver() {
+  function gameOver(gameOverType: Modes) {
     chosenWord?.split("").forEach(letter => {
       showLetter(letter);
     })
+
+    setMode(gameOverType);
 
     setTimeout(() => {
       setOpenMenu(true);
