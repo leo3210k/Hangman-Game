@@ -16,10 +16,10 @@ function Game() {
   const data: HangmanData = hangmanData;
   
   const location = useLocation();
+  const category = location.state.category as keyof HangmanWords;
   
   useEffect(() => {
     if (location.state?.category) {
-      const category = location.state.category as keyof HangmanWords;
       const word = getRandomWord(category);
       setChosenWord(word);
     }
@@ -77,7 +77,7 @@ function Game() {
 
     setTimeout(() => {
       setOpen(true);
-    }, 3000)
+    }, 2000)
   }
 
   return (
@@ -86,7 +86,7 @@ function Game() {
         <div className="w-full flex justify-between items-center gap-4">
           <div className="flex items-center gap-4">
             <Modal open={open} setOpen={setOpen}/>
-            <h1 className="text-5xl text-white bg-clip-text">Movies</h1>
+            <h1 className="text-5xl text-white bg-clip-text capitalize">{category.replace("_", " ")}</h1>
           </div>
           <div className="flex items-center gap-4">
             <progress value="100" max="100" className="w-16 h-3 bg-white rounded-full p-[2px]"></progress>
