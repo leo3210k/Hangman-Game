@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 import {
   Dialog,
@@ -9,16 +9,24 @@ import {
   DialogTitle,
   DialogTrigger,
   DialogFooter,
-  DialogClose
-} from "./utils/dialog"
-import menu from '../assets/images/icons/icon-menu.svg'; 
-import Modes from './utils/modes';
+  DialogClose,
+} from "./utils/dialog";
+import menu from "../assets/images/icons/icon-menu.svg";
+import Modes from "./utils/modes";
 
-function Modal({ openMenu, setOpenMenu, mode }: { openMenu: boolean, setOpenMenu: any, mode: Modes }) {
+function Modal({
+  openMenu,
+  setOpenMenu,
+  mode,
+}: {
+  openMenu: boolean;
+  setOpenMenu: any;
+  mode: Modes;
+}) {
   function currentTitle() {
-    if(mode === Modes.Playing) return 'Pause';
-    else if(mode === Modes.Lost) return 'You Lose';
-    else return 'You Won';
+    if (mode === Modes.Playing) return "Pause";
+    else if (mode === Modes.Lost) return "You Lose";
+    else return "You Won";
   }
 
   return (
@@ -34,19 +42,19 @@ function Modal({ openMenu, setOpenMenu, mode }: { openMenu: boolean, setOpenMenu
             {currentTitle()}
           </DialogTitle>
           <DialogDescription className="flex flex-col gap-14">
-            {mode === Modes.Lost || mode === Modes.Won ? 
+            {mode === Modes.Lost || mode === Modes.Won ? (
               <Link to="/howtoplay">
                 <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
                   play again
                 </button>
               </Link>
-             : 
+            ) : (
               <DialogClose asChild>
                 <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
                   continue
                 </button>
               </DialogClose>
-            }
+            )}
             <Link to="/pickcategory">
               <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
                 new category
@@ -59,8 +67,7 @@ function Modal({ openMenu, setOpenMenu, mode }: { openMenu: boolean, setOpenMenu
             </Link>
           </DialogDescription>
         </DialogHeader>
-        <DialogFooter className="sm:justify-start">
-        </DialogFooter>
+        <DialogFooter className="sm:justify-start"></DialogFooter>
       </DialogContent>
     </Dialog>
   );
