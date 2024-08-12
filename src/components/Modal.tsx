@@ -15,6 +15,12 @@ import menu from '../assets/images/icons/icon-menu.svg';
 import Modes from './utils/modes';
 
 function Modal({ openMenu, setOpenMenu, mode }: { openMenu: boolean, setOpenMenu: any, mode: Modes }) {
+  function currentTitle() {
+    if(mode === Modes.Playing) return 'Pause';
+    else if(mode === Modes.Lost) return 'You Lose';
+    else return 'You Won';
+  }
+
   return (
     <Dialog open={openMenu} onOpenChange={setOpenMenu}>
       <DialogTrigger asChild>
@@ -25,7 +31,7 @@ function Modal({ openMenu, setOpenMenu, mode }: { openMenu: boolean, setOpenMenu
       <DialogContent className="w-[80%] bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-[4.5rem] py-28">
         <DialogHeader className="flex flex-col justify-center items-center">
           <DialogTitle className="absolute text-8xl font-normal text-transparent tracking-wide bg-gradient-to-b from-malibu to-white bg-clip-text top-0 -mt-14">
-            {mode ? 'You Lose' : 'Pause'}
+            {currentTitle()}
           </DialogTitle>
           <DialogDescription className="flex flex-col gap-14">
             {mode ? 
