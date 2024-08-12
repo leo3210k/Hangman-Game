@@ -83,7 +83,6 @@ function Game() {
     })
 
     setTimeout(() => {
-      setLost(true);
       setOpenMenu(true);
     }, 2000)
   }
