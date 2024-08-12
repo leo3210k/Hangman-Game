@@ -8,7 +8,7 @@ import Letters from './Letters';
 import Alphabet from './Alphabet';
 import Modal from './Modal';
 
-enum modes {
+enum Modes {
   Won,
   Lost,
   Playing
@@ -16,7 +16,7 @@ enum modes {
 
 function Game() {
   const [openMenu, setOpenMenu] = useState(false);
-  const [mode, setMode] = useState<modes>(modes.Playing);
+  const [mode, setMode] = useState<Modes>(Modes.Playing);
 
   const [chosenWord, setChosenWord] = useState<string | null>(null);
   
@@ -92,7 +92,7 @@ function Game() {
       <div className="min-h-svh flex flex-col justify-between gap-14 px-6 pt-6 pb-8">
         <div className="w-full flex justify-between items-center gap-4">
           <div className="flex items-center gap-4">
-            <Modal openMenu={openMenu} setOpenMenu={setOpenMenu} mode={mode}/>
+            <Modal openMenu={openMenu} setOpenMenu={setOpenMenu} modes={Modes}/>
             <h1 className="text-5xl text-white bg-clip-text capitalize">{category.replace("_", " ")}</h1>
           </div>
           <div className="flex items-center gap-4">
