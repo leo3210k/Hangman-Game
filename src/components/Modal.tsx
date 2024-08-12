@@ -21,18 +21,6 @@ function Modal({ openMenu, setOpenMenu, mode }: { openMenu: boolean, setOpenMenu
     else return 'You Won';
   }
 
-  function currentButton() {
-    if(mode === Modes.Playing) {
-      return 'Pause';
-    }
-    else if(mode === Modes.Lost) {
-      return 'You Lose';
-    }
-    else {
-      return 'You Won';
-    }
-  }
-
   return (
     <Dialog open={openMenu} onOpenChange={setOpenMenu}>
       <DialogTrigger asChild>
