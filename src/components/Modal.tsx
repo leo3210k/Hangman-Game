@@ -8,6 +8,8 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogFooter,
+  DialogClose
 } from "./utils/dialog"
 import menu from '../assets/images/icons/icon-menu.svg'; 
 
@@ -25,11 +27,19 @@ function Modal({ openMenu, setOpenMenu, lost }: { openMenu: boolean, setOpenMenu
             {lost ? 'You Lose' : 'Pause'}
           </DialogTitle>
           <DialogDescription className="flex flex-col gap-14">
-            <Link to="/howtoplay">
-              <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
-                play again
-              </button>
-            </Link>
+            {lost ? 
+              <Link to="/howtoplay">
+                <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
+                  play again
+                </button>
+              </Link>
+             : 
+              <DialogClose asChild>
+                <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
+                  continue
+                </button>
+              </DialogClose>
+            }
             <Link to="/pickcategory">
               <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
                 new category
@@ -42,6 +52,8 @@ function Modal({ openMenu, setOpenMenu, lost }: { openMenu: boolean, setOpenMenu
             </Link>
           </DialogDescription>
         </DialogHeader>
+        <DialogFooter className="sm:justify-start">
+        </DialogFooter>
       </DialogContent>
     </Dialog>
   );
