@@ -25,10 +25,10 @@ function Modal({ openMenu, setOpenMenu, mode }: { openMenu: boolean, setOpenMenu
       <DialogContent className="w-[80%] bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-[4.5rem] py-28">
         <DialogHeader className="flex flex-col justify-center items-center">
           <DialogTitle className="absolute text-8xl font-normal text-transparent tracking-wide bg-gradient-to-b from-malibu to-white bg-clip-text top-0 -mt-14">
-            {lost ? 'You Lose' : 'Pause'}
+            {mode ? 'You Lose' : 'Pause'}
           </DialogTitle>
           <DialogDescription className="flex flex-col gap-14">
-            {lost ? 
+            {mode ? 
               <Link to="/howtoplay">
                 <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
                   play again
