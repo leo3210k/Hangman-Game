@@ -11,7 +11,7 @@ import {
 } from "./utils/dialog"
 import menu from '../assets/images/icons/icon-menu.svg'; 
 
-function Modal({ openMenu, setOpenMenu }: { openMenu: boolean, setOpenMenu: any }) {
+function Modal({ openMenu, setOpenMenu, lost }: { openMenu: boolean, setOpenMenu: any, lost: boolean }) {
   return (
     <Dialog open={openMenu} onOpenChange={setOpenMenu}>
       <DialogTrigger asChild>
@@ -21,7 +21,9 @@ function Modal({ openMenu, setOpenMenu }: { openMenu: boolean, setOpenMenu: any 
       </DialogTrigger>
       <DialogContent className="w-[80%] bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-[4.5rem] py-28">
         <DialogHeader className="flex flex-col justify-center items-center">
-          <DialogTitle className="absolute text-8xl font-normal text-transparent tracking-wide bg-gradient-to-b from-malibu to-white bg-clip-text top-0 -mt-14">You Lose</DialogTitle>
+          <DialogTitle className="absolute text-8xl font-normal text-transparent tracking-wide bg-gradient-to-b from-malibu to-white bg-clip-text top-0 -mt-14">
+            {lost ? 'You Lose' : 'Pause'}
+          </DialogTitle>
           <DialogDescription className="flex flex-col gap-14">
             <Link to="/howtoplay">
               <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
