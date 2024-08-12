@@ -12,8 +12,9 @@ import {
   DialogClose
 } from "./utils/dialog"
 import menu from '../assets/images/icons/icon-menu.svg'; 
+import Modes from './utils/modes';
 
-function Modal({ openMenu, setOpenMenu, lost }: { openMenu: boolean, setOpenMenu: any, lost: boolean }) {
+function Modal({ openMenu, setOpenMenu, mode }: { openMenu: boolean, setOpenMenu: any, mode: Modes }) {
   return (
     <Dialog open={openMenu} onOpenChange={setOpenMenu}>
       <DialogTrigger asChild>
