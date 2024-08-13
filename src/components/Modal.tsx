@@ -40,7 +40,7 @@ function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
           <DialogTitle className="absolute text-8xl font-normal text-transparent tracking-wide bg-gradient-to-b from-malibu to-white bg-clip-text top-0 -mt-14">
             {currentTitle()}
           </DialogTitle>
-          <DialogDescription className="flex flex-col gap-14">
+          <DialogDescription className="flex flex-col items-center gap-14">
             {mode === Modes.Lost || mode === Modes.Won ? (
               <DialogClose asChild>
                 <button onClick={() => playAgain()} className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
