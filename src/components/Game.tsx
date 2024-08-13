@@ -120,6 +120,7 @@ function Game() {
   function resetGame(): void {
     setNumRounds((n) => n + 1);
     enableAllButtons();
+    changeHealth(100);
   }
 
   return (
