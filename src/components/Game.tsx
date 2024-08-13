@@ -47,7 +47,7 @@ function Game() {
       if(isGameWon(letter)) gameOver(Modes.Won);
       
     } else {
-      decreaseLife();
+      decreaseHealth();
     }
 
     disableButton(element);
@@ -75,7 +75,7 @@ function Game() {
     else return false;
   }
 
-  function decreaseLife() {
+  function decreaseHealth() {
     const progress = document.querySelector('progress');
 
     if(progress) { 
