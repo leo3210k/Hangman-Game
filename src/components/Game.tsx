@@ -91,6 +91,14 @@ function Game() {
     element.target.disabled = true;
   }
 
+  function enableAllButtons() {
+    const buttons = document.querySelectorAll("button");
+
+    buttons.forEach(button => {
+      button.disabled = false;
+    })
+  }
+
   function gameOver(gameOverType: Modes) {
     chosenWord?.split("").forEach(letter => {
       showLetter(letter);
@@ -105,6 +113,7 @@ function Game() {
 
   function resetGame(): void {
     setNumRounds((n) => n + 1);
+    enableAllButtons();
   }
 
   return (
