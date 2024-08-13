@@ -18,7 +18,7 @@ interface ModalProps {
   openMenu: boolean; 
   setOpenMenu: any; 
   mode: Modes; 
-  playAgain: void;
+  playAgain: any;
 }
 
 function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
