@@ -42,11 +42,9 @@ function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
           </DialogTitle>
           <DialogDescription className="flex flex-col gap-14">
             {mode === Modes.Lost || mode === Modes.Won ? (
-              <Link to="/howtoplay">
-                <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
-                  play again
-                </button>
-              </Link>
+              <button onClick={() => playAgain()} className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
+                play again
+              </button>
             ) : (
               <DialogClose asChild>
                 <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
