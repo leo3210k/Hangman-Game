@@ -15,6 +15,8 @@ function Game() {
 
   const [chosenWord, setChosenWord] = useState<string | null>(null);
   const [remainingLetters, setRemainingLetters] = useState<string>("");
+
+  const [numRounds, setNumRounds] = useState<number>(0);
   
   const data: HangmanData = hangmanData;
   
@@ -99,6 +101,10 @@ function Game() {
     setTimeout(() => {
       setOpenMenu(true);
     }, 2000)
+  }
+
+  function resetGame() {
+
   }
 
   return (
