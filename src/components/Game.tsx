@@ -19,11 +19,14 @@ function Game() {
   
   const location = useLocation();
   const category = location.state.category as keyof HangmanWords;
+
+  let remainingLetters;
   
   useEffect(() => {
     if (location.state?.category) {
       const word = getRandomWord(category);
       setChosenWord(word);
+      remainingLetters = word;
     }
   }, [location.state?.category]);
 
