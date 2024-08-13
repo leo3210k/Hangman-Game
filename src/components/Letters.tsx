@@ -2,7 +2,7 @@ import React from 'react';
 
 function Letters({ chosenWord }: { chosenWord: string | null }) {
   return (
-    <div className="flex justify-center items-center flex-wrap gap-4">
+    <div className="flex justify-center items-center flex-wrap gap-y-4 gap-x-6">
       {chosenWord?.split("_").map((word, i) => {
         return (
           <div className="flex flex-wrap gap-2" key={word + i}>
