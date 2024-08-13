@@ -14,20 +14,19 @@ function Game() {
   const [mode, setMode] = useState<Modes>(Modes.Playing);
 
   const [chosenWord, setChosenWord] = useState<string | null>(null);
+  const [remainingLetters, setRemainingLetters] = useState<string>("");
   
   const data: HangmanData = hangmanData;
   
   const location = useLocation();
   const category = location.state.category as keyof HangmanWords;
-
-  let remainingLetters: string;
   
   useEffect(() => {
     if (location.state?.category) {
       const word = getRandomWord(category);
       setChosenWord(word);
 
-      remainingLetters = word.replace(/_/g, "");
+      setRemainingLetters(word.replace(/_/g, ""));
     }
   }, [location.state?.category]);
 
@@ -44,6 +43,7 @@ function Game() {
       showLetter(letter);
 
       if(isGameWon(letter)) gameOver(Modes.Won);
+      
     } else {
       decreaseLife();
     }
@@ -63,7 +63,7 @@ function Game() {
   }
 
   function isGameWon(letter: string) {
-    remainingLetters.replace(letter, "");
+    setRemainingLetters(remainingLetters.replace(letter, ""));
 
     if(remainingLetters.length === 0) return true;
     else return false;
