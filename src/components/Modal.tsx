@@ -14,15 +14,7 @@ import {
 import menu from "../assets/images/icons/icon-menu.svg";
 import Modes from "./utils/modes";
 
-function Modal({
-  openMenu,
-  setOpenMenu,
-  mode,
-}: {
-  openMenu: boolean;
-  setOpenMenu: any;
-  mode: Modes;
-}) {
+function Modal({ openMenu, setOpenMenu, mode, playAgain }: { openMenu: boolean; setOpenMenu: any; mode: Modes; playAgain: void; }) {
   function currentTitle() {
     if (mode === Modes.Playing) return "Pause";
     else if (mode === Modes.Lost) return "You Lose";
