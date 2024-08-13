@@ -119,6 +119,7 @@ function Game() {
 
   function resetGame(): void {
     setNumRounds((n) => n + 1);
+    setMode(Modes.Playing);
     enableAllButtons();
     changeHealth(100);
   }
