@@ -87,6 +87,12 @@ function Game() {
     }
   }
 
+  function changeHealth(health: number) {
+    const progress = document.querySelector('progress');
+
+    if(progress) progress.value = health;
+  }
+
   function disableButton(element: any) {
     element.target.disabled = true;
   }
