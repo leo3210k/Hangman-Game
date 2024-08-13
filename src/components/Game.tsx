@@ -63,7 +63,10 @@ function Game() {
   }
 
   function isGameWon(letter: string) {
-    setRemainingLetters(remainingLetters.replace(letter, ""));
+    const regex = new RegExp(letter, "g");
+
+    setRemainingLetters(remainingLetters.replace(regex, ""));
+    console.log(remainingLetters.length);
 
     if(remainingLetters.length === 0) return true;
     else return false;
