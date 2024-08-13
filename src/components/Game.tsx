@@ -33,7 +33,7 @@ function Game() {
     return words[randomIndex];
   }
 
-  function verifyLetter(element: any) {
+  function verifyChosenLetter(element: any) {
     const letter = element.target.innerHTML.toLowerCase();
 
     if(chosenWord?.includes(letter)) {
@@ -98,7 +98,7 @@ function Game() {
           </div>
         </div>
         <Letters chosenWord={chosenWord} />
-        <Alphabet onClick={verifyLetter}/>
+        <Alphabet onClick={verifyChosenLetter}/>
       </div>
     </div>
   );
