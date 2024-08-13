@@ -28,7 +28,7 @@ function Game() {
 
       setRemainingLetters(word.replace(/_/g, ""));
     }
-  }, [location.state?.category]);
+  }, []);
 
   function getRandomWord(category: keyof HangmanWords): string {
     const words = data.words[category];
