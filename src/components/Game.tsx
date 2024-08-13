@@ -104,7 +104,7 @@ function Game() {
   }
 
   function resetGame() {
-
+    setNumRounds((n) => n + 1);
   }
 
   return (
