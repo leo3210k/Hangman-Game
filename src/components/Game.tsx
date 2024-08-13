@@ -43,7 +43,7 @@ function Game() {
     if(chosenWord?.includes(letter)) {
       showLetter(letter);
 
-      if(isGameWon(letter))
+      if(isGameWon(letter)) gameOver(Modes.Won);
     } else {
       decreaseLife();
     }
