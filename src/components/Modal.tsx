@@ -23,7 +23,7 @@ interface ModalProps {
 
 function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
   function currentTitle() {
-    if (mode === Modes.Playing) return "Pause";
+    if (mode === Modes.Playing) return "Paused";
     else if (mode === Modes.Lost) return "You Lose";
     else return "You Won";
   }
