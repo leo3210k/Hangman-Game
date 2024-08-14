@@ -16,7 +16,7 @@ function PickCategory() {
   return (
     <div className="min-h-svh bg-gradient-to-b from-black_rock to-deep_koamaru px-6 sm:px-14 pt-6">
       <div className="flex flex-col gap-14">
-        <div className="w-full flex justify-between items-center">
+        <div className="w-full flex justify-between sm:justify-normal items-center sm:gap-16">
           <Link to="/">
             <button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3">
               <img src={back} alt="back" className="w-6 sm:w-10" />
