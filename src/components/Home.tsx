@@ -6,7 +6,7 @@ import play from '../assets/images/icons/icon-play.svg';
 
 function Home() {
   return (
-    <div className="min-h-svh flex justify-center items-center bg-mobile bg-center bg-cover">
+    <div className="min-h-svh flex justify-center items-center bg-mobile sm:bg-tablet bg-center bg-cover">
       <div className="relative w-[90%] flex flex-col justify-center items-center gap-16 bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-[4.5rem] -mb-20 py-28">
         <img src={logo} alt="logo" className="absolute -top-24" />
         <Link to="/pickcategory">
