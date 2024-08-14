@@ -43,24 +43,24 @@ function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
           <DialogDescription className="flex flex-col items-center gap-14">
             {mode === Modes.Lost || mode === Modes.Won ? (
               <DialogClose asChild>
-                <button onClick={() => playAgain()} className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
+                <button onClick={() => playAgain()} className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 sm:px-16 py-3">
                   play again
                 </button>
               </DialogClose>
             ) : (
               <DialogClose asChild>
-                <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
+                <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 sm:px-16 py-3">
                   continue
                 </button>
               </DialogClose>
             )}
             <Link to="/pickcategory">
-              <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 py-3">
+              <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 sm:px-16 py-3">
                 new category
               </button>
             </Link>
             <Link to="/">
-              <button className="text-4xl text-white tracking-wide bg-gradient-to-b from-blush_pink to-malibu shadow-home_play rounded-full uppercase px-7 py-3">
+              <button className="text-4xl text-white tracking-wide bg-gradient-to-b from-blush_pink to-malibu shadow-home_play rounded-full uppercase px-7 sm:px-16 py-3">
                 quit game
               </button>
             </Link>
