@@ -133,7 +133,7 @@ function Game() {
             <h1 className="text-5xl text-white bg-clip-text capitalize">{category.replace("_", " ")}</h1>
           </div>
           <div className="flex items-center gap-4">
-            <progress value="100" max="100" className="w-16 h-3 bg-white rounded-full p-[2px]"></progress>
+            <progress value="100" max="100" className="w-16 sm:w-24 h-3 sm:h-[0.85rem] bg-white rounded-full p-[2px]"></progress>
             <img src={heart} alt="heart" className="w-10" />
           </div>
         </div>
