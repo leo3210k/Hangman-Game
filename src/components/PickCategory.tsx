@@ -28,7 +28,7 @@ function PickCategory() {
           {categories.map(category => {
             return (
               <Link to="/game" state={{ category: category.replace(" ", "_") }} key={category}>
-                <button className="w-full sm:w-80 sm:h-40 text-2xl text-white tracking-wider bg-blue_ribbon hover:bg-blue_ribbon_transparent rounded-full sm:rounded-[2.5rem] shadow-category uppercase py-5">
+                <button className="w-full sm:w-80 sm:h-40 text-2xl sm:text-5xl text-white tracking-wider bg-blue_ribbon hover:bg-blue_ribbon_transparent rounded-full sm:rounded-[2.5rem] shadow-category uppercase py-5">
                   { category }
                 </button>
               </Link>
