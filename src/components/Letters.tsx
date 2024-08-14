@@ -8,7 +8,7 @@ function Letters({ chosenWord }: { chosenWord: string | null }) {
           <div className="flex flex-wrap gap-2 sm:gap-4" key={word + i}>
             {word.split("").map((letter, i) => {
               return (
-                <div className="animation text-4xl sm:text-6xl text-transparent bg-blue_ribbon rounded-full shadow-category uppercase px-4 sm:px-7 py-4 sm:py-8" key={letter + i}
+                <div className="animation sm:w-[4.25rem] sm:h-[6.25rem] text-4xl sm:text-6xl text-transparent bg-blue_ribbon rounded-full shadow-category uppercase px-4 sm:px-0 py-4 sm:py-0" key={letter + i}
                   data-letter={letter}>
                   {letter}
                 </div>
