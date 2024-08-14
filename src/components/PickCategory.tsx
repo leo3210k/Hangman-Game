@@ -18,7 +18,7 @@ function PickCategory() {
       <div className="flex flex-col gap-14">
         <div className="w-full flex justify-between sm:justify-normal items-center sm:gap-16">
           <Link to="/">
-            <button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3">
+            <button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3 sm:p-4">
               <img src={back} alt="back" className="w-6 sm:w-10" />
             </button>
           </Link>
