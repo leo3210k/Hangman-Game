@@ -37,7 +37,7 @@ function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
       </DialogTrigger>
       <DialogContent className="w-[80%] bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-[4.5rem] py-28">
         <DialogHeader className="flex flex-col justify-center items-center">
-          <DialogTitle className="absolute text-8xl sm:text-[9rem] font-normal text-transparent tracking-wide bg-gradient-to-b from-malibu to-white bg-clip-text top-0 -mt-14">
+          <DialogTitle className="absolute text-8xl sm:text-[9rem] font-normal text-transparent tracking-wide bg-gradient-to-b from-malibu to-white bg-clip-text top-0 -mt-14 sm:-mt-20">
             {currentTitle()}
           </DialogTitle>
           <DialogDescription className="flex flex-col items-center gap-14">
