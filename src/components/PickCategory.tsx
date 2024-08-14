@@ -24,7 +24,7 @@ function PickCategory() {
           </Link>
           <h1 className="text-[2.6rem] sm:text-[6.5rem] text-transparent bg-clip-text tracking-wider sm:tracking-normal bg-gradient-to-b from-malibu to-white">Pick a Category</h1>
         </div>
-        <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2">
+        <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 sm:gap-x-12 sm:gap-y-14">
           {categories.map(category => {
             return (
               <Link to="/game" state={{ category: category.replace(" ", "_") }} key={category}>
