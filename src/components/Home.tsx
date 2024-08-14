@@ -8,7 +8,7 @@ function Home() {
   return (
     <div className="min-h-svh flex justify-center items-center bg-mobile sm:bg-tablet bg-center bg-cover">
       <div className="relative w-[90%] sm:w-[32rem] flex flex-col justify-center items-center gap-16 bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-[4.5rem] -mb-24 py-28">
-        <img src={logo} alt="logo" className="absolute -top-24" />
+        <img src={logo} alt="logo" className="absolute -top-28" />
         <Link to="/pickcategory">
           <button className="rounded-full bg-gradient-to-b from-blush_pink to-malibu shadow-home_play p-10">
             <img src={play} alt="play" />
