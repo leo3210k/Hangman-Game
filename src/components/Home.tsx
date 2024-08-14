@@ -15,7 +15,7 @@ function Home() {
           </button>
         </Link>
         <Link to="/howtoplay">
-          <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-6 py-3">
+          <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-6 sm:px-16 py-3">
             how to play
           </button>
         </Link>
