@@ -32,7 +32,7 @@ function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
     <Dialog open={openMenu} onOpenChange={setOpenMenu}>
       <DialogTrigger asChild>
         <button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3">
-          <img src={menu} alt="menu" className="w-6" />
+          <img src={menu} alt="menu" className="w-6 sm:w-10" />
         </button>
       </DialogTrigger>
       <DialogContent className="w-[80%] bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-[4.5rem] py-28">
