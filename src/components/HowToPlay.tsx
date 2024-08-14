@@ -22,7 +22,7 @@ function HowToPlay() {
         <div className="w-full flex justify-between items-center">
           <Link to="/">
             <button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3">
-              <img src={back} alt="back" className="w-6" />
+              <img src={back} alt="back" className="w-6 sm:w-10" />
             </button>
           </Link>
           <h1 className="text-5xl text-transparent bg-clip-text tracking-wider bg-gradient-to-b from-malibu to-white">How to Play</h1>
