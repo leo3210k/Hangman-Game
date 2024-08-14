@@ -22,7 +22,7 @@ function PickCategory() {
               <img src={back} alt="back" className="w-6 sm:w-10" />
             </button>
           </Link>
-          <h1 className="text-[2.6rem] sm:text-[6rem] text-transparent bg-clip-text tracking-wider bg-gradient-to-b from-malibu to-white">Pick a Category</h1>
+          <h1 className="text-[2.6rem] sm:text-[6rem] text-transparent bg-clip-text tracking-wider sm:tracking-normal bg-gradient-to-b from-malibu to-white">Pick a Category</h1>
         </div>
         <div className="flex flex-col gap-4">
           {categories.map(category => {
