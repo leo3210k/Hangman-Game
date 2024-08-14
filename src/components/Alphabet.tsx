@@ -7,7 +7,7 @@ function Alphabet({ onClick }: { onClick: any }) {
     <div className="flex justify-center items-center flex-wrap gap-3">
       {alphabet.map((letter, i) => {
         return (
-          <button className="text-2xl text-deep_koamaru bg-white rounded-full px-4 py-3" key={i + letter}
+          <button className="text-2xl text-deep_koamaru bg-white rounded-full px-4 sm:px-8 py-3 sm:py-8" key={i + letter}
             onClick={e => onClick(e)}>
             {letter}
           </button>
