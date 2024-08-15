@@ -8,7 +8,7 @@ function HowToPlay() {
     return (
       <div className="lg:w-full flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 bg-white rounded-3xl sm:rounded-[2.5rem] p-8">
         <h2 className="hidden sm:block lg:hidden sm:text-8xl text-blue_ribbon">{ number }</h2>
-        <div className="flex sm:flex-col lg:justify-between items-center sm:items-start lg:items-center gap-8 sm:gap-4">
+        <div className="flex sm:flex-col items-center sm:items-start lg:items-center gap-8 sm:gap-4">
           <h2 className="text-2xl sm:hidden lg:block lg:text-8xl text-blue_ribbon">{ number }</h2>
           <h3 className="text-2xl sm:text-4xl text-deep_koamaru tracking-wide uppercase">{ title }</h3>
           <span className="hidden sm:block lg:w-[15rem] text-xl lg:text-center text-purple_mountains_majesty tracking-wider leading-6">{ text }</span>
