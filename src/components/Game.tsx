@@ -126,7 +126,7 @@ function Game() {
 
   return (
     <div className="min-h-svh bg-gradient-to-b from-black_rock to-deep_koamaru">
-      <div className="min-h-svh flex flex-col justify-between gap-14 px-6 sm:px-14 pt-6 pb-8 sm:py-5 lg:px-28 lg:pt-8">
+      <div className="min-h-svh flex flex-col justify-between gap-14 px-6 pt-6 pb-8 sm:px-14 sm:py-5 lg:px-28 lg:pt-8">
         <div className="w-full flex justify-between items-center gap-4">
           <div className="flex items-center gap-4 sm:gap-10">
             <Modal openMenu={openMenu} setOpenMenu={setOpenMenu} mode={mode} playAgain={resetGame}/>
