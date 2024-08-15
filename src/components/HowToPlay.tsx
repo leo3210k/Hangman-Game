@@ -7,7 +7,7 @@ function HowToPlay() {
   const ItemList = ({ number, title, text }: { number: string, title: string, text: string }) => {
     return (
       <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 bg-white rounded-3xl p-8">
-        <h2 className="hidden sm:block text-2xl text-blue_ribbon">{ number }</h2>
+        <h2 className="hidden sm:block sm:text-8xl text-blue_ribbon">{ number }</h2>
         <div className="flex sm:flex-col items-center gap-8">
           <h2 className="text-2xl sm:hidden text-blue_ribbon">{ number }</h2>
           <h3 className="text-2xl text-deep_koamaru tracking-wide uppercase">{ title }</h3>
