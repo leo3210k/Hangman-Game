@@ -11,7 +11,7 @@ function HowToPlay() {
         <div className="flex sm:flex-col items-center sm:items-start gap-8 sm:gap-6">
           <h2 className="text-2xl sm:hidden text-blue_ribbon">{ number }</h2>
           <h3 className="text-2xl sm:text-4xl text-deep_koamaru tracking-wide uppercase">{ title }</h3>
-          <span className="hidden sm:block text-xl text-purple_mountains_majesty tracking-wider leading-5">{ text }</span>
+          <span className="hidden sm:block text-xl text-purple_mountains_majesty tracking-wider leading-6">{ text }</span>
         </div>
         <span className="sm:hidden text-purple_mountains_majesty tracking-wider leading-5">{ text }</span>
       </div>
