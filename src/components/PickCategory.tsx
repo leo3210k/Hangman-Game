@@ -14,7 +14,7 @@ function PickCategory() {
   ]
 
   return (
-    <div className="min-h-svh flex flex-col items-center lg:items-baseline bg-gradient-to-b from-black_rock to-deep_koamaru px-6 sm:px-14 pt-6 sm:pt-4">
+    <div className="min-h-svh flex flex-col items-center lg:items-baseline bg-gradient-to-b from-black_rock to-deep_koamaru px-6 sm:px-14 pt-6 sm:pt-4 lg:px-28">
       <div className="flex flex-col gap-14">
         <div className="w-full flex justify-between sm:justify-normal items-center sm:gap-16">
           <Link to="/">
