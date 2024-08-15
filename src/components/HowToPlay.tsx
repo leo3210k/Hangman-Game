@@ -27,7 +27,7 @@ function HowToPlay() {
               <img src={back} alt="back" className="w-6 sm:w-10" />
             </button>
           </Link>
-          <h1 className="text-5xl sm:text-[6.5rem] lg:text-[8rem] text-transparent bg-clip-text tracking-wider sm:tracking-normal bg-gradient-to-b from-malibu to-white">How to Play</h1>
+          <h1 className="text-5xl sm:text-[6.5rem] lg:text-[8rem] lg:flex-1 lg:text-center text-transparent bg-clip-text tracking-wider sm:tracking-normal bg-gradient-to-b from-malibu to-white">How to Play</h1>
         </div>
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8">
           <ItemList number="01" title="Pick a category" text="First, choose a word category, like animals or movies. The computer then randomly selects a secret word from that topic and shows you blanks for each letter of the word."/>
