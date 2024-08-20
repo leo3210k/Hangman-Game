@@ -72,9 +72,12 @@ function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
               </motion.button>
             </Link>
             <Link to="/">
-              <button className="text-4xl text-white tracking-wide bg-gradient-to-b from-blush_pink to-malibu shadow-home_play rounded-full uppercase px-7 sm:px-16 py-3">
+              <motion.button className="text-4xl text-white tracking-wide bg-gradient-to-b from-blush_pink to-malibu shadow-home_play rounded-full uppercase px-7 sm:px-16 py-3"
+              initial={{ y: 0 }}
+              whileHover={{ scale: 1.1, y: 15 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                 quit game
-              </button>
+              </motion.button>
             </Link>
           </DialogDescription>
         </DialogHeader>
