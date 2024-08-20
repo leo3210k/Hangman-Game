@@ -1,16 +1,19 @@
 import React from 'react';
 
 import { alphabet } from './utils/alphabet';
+import { motion } from 'framer-motion';
 
 function Alphabet({ onClick }: { onClick: any }) {
   return (
     <div className="flex justify-center items-center flex-wrap gap-3 sm:gap-5">
       {alphabet.map((letter, i) => {
         return (
-          <button className="text-2xl sm:text-5xl text-deep_koamaru sm:font-medium bg-white rounded-full sm:rounded-[1.5rem] px-4 py-3 sm:px-7 sm:py-4 lg:px-14" key={i + letter}
-            onClick={e => onClick(e)}>
+          <motion.button className="text-2xl sm:text-5xl text-deep_koamaru sm:font-medium bg-white rounded-full sm:rounded-[1.5rem] px-4 py-3 sm:px-7 sm:py-4 lg:px-14" key={i + letter}
+          onClick={e => onClick(e)}
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}>
             {letter}
-          </button>
+          </motion.button>
         )
       })}
     </div>
