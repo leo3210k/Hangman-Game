@@ -46,21 +46,30 @@ function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
           <DialogDescription className="flex flex-col items-center gap-14">
             {mode === Modes.Lost || mode === Modes.Won ? (
               <DialogClose asChild>
-                <button onClick={() => playAgain()} className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 sm:px-16 py-3">
+                <motion.button onClick={() => playAgain()} className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 sm:px-16 py-3"
+                  initial={{ y: 0 }}
+                  whileHover={{ scale: 1.1, y: 15 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                   play again
-                </button>
+                </motion.button>
               </DialogClose>
             ) : (
               <DialogClose asChild>
-                <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 sm:px-16 py-3">
+                <motion.button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 sm:px-16 py-3"
+                initial={{ y: 0 }}
+                whileHover={{ scale: 1.1, y: 15 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                   continue
-                </button>
+                </motion.button>
               </DialogClose>
             )}
             <Link to="/pickcategory">
-              <button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 sm:px-16 py-3">
+              <motion.button className="text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-7 sm:px-16 py-3"
+              initial={{ y: 0 }}
+              whileHover={{ scale: 1.1, y: 15 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                 new category
-              </button>
+              </motion.button>
             </Link>
             <Link to="/">
               <button className="text-4xl text-white tracking-wide bg-gradient-to-b from-blush_pink to-malibu shadow-home_play rounded-full uppercase px-7 sm:px-16 py-3">
