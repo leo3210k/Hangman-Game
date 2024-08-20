@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import logo from '../assets/images/icons/logo.svg';
 import play from '../assets/images/icons/icon-play.svg';
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 
 function Home() {
   return (
