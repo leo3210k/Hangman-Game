@@ -19,9 +19,12 @@ function Home() {
           </motion.button>
         </Link>
         <Link to="/howtoplay">
-          <button className="home_buttons text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-6 sm:px-16 py-3">
+          <motion.button className="home_buttons text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-6 sm:px-16 py-3"
+          whileHover={{ scale: 1.2 }}
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
             how to play
-          </button>
+          </motion.button>
         </Link>
       </div>
     </div>
