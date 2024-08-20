@@ -13,16 +13,14 @@ function Home() {
         <Link to="/pickcategory">
           <motion.button className="rounded-full bg-gradient-to-b from-blush_pink to-malibu shadow-home_play p-10"
           whileHover={{ scale: 1.2 }}
-          transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}>
             <img src={play} alt="play" />
           </motion.button>
         </Link>
         <Link to="/howtoplay">
           <motion.button className="home_buttons text-4xl text-white tracking-wide bg-blue_ribbon shadow-home_how rounded-full uppercase px-6 sm:px-16 py-3"
           whileHover={{ scale: 1.2 }}
-          transition={{ type: "spring", stiffness: 400, damping: 10 }}
-          >
+          transition={{ type: "spring", stiffness: 400, damping: 10 }}>
             how to play
           </motion.button>
         </Link>
