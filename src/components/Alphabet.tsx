@@ -1,4 +1,5 @@
 import React from 'react';
+import './Alphabet.css';
 
 import { alphabet } from './utils/alphabet';
 import { motion } from 'framer-motion';
