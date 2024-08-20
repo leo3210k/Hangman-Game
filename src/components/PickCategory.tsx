@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import back from '../assets/images/icons/icon-back.svg';
+import { motion } from 'framer-motion';
 
 function PickCategory() {
   const categories = [
@@ -18,9 +19,11 @@ function PickCategory() {
       <div className="flex flex-col gap-14">
         <div className="w-full flex justify-between sm:justify-normal items-center sm:gap-16 lg:gap-0">
           <Link to="/">
-            <button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3 sm:p-4">
+            <motion.button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3 sm:p-4"
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}>
               <img src={back} alt="back" className="w-6 sm:w-10" />
-            </button>
+            </motion.button>
           </Link>
           <h1 className="text-[2.6rem] sm:text-[6.5rem] lg:text-[8rem] lg:flex-1 lg:text-center text-transparent bg-clip-text tracking-wider sm:tracking-normal bg-gradient-to-b from-malibu to-white">Pick a Category</h1>
         </div>
