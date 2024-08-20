@@ -13,6 +13,7 @@ import {
 } from "./utils/dialog";
 import menu from "../assets/images/icons/icon-menu.svg";
 import Modes from "./utils/modes";
+import { motion } from 'framer-motion';
 
 interface ModalProps {
   openMenu: boolean; 
@@ -31,9 +32,11 @@ function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
   return (
     <Dialog open={openMenu} onOpenChange={setOpenMenu}>
       <DialogTrigger asChild>
-        <button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3 sm:p-4">
+        <motion.button className="flex justify-center items-center bg-gradient-to-b from-blush_pink to-malibu rounded-full shadow-howtoplay_back p-3 sm:p-4"
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: "spring", stiffness: 400, damping: 10 }}>
           <img src={menu} alt="menu" className="w-6 sm:w-10" />
-        </button>
+        </motion.button>
       </DialogTrigger>
       <DialogContent className="w-[80%] bg-gradient-to-b from-governor_bay to-governor_bay_transparent shadow-home_container rounded-[4.5rem] sm:rounded-[5rem] py-28 sm:py-24">
         <DialogHeader className="flex flex-col justify-center items-center">
