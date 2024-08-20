@@ -31,9 +31,12 @@ function PickCategory() {
           {categories.map(category => {
             return (
               <Link to="/game" state={{ category: category.replace(" ", "_") }} key={category}>
-                <button className="w-full sm:w-[19rem] lg:w-full sm:h-40 text-2xl sm:text-5xl text-white tracking-wider bg-blue_ribbon hover:bg-blue_ribbon_transparent rounded-full sm:rounded-[2.5rem] shadow-category uppercase py-5">
+                <motion.button className="w-full sm:w-[19rem] lg:w-full sm:h-40 text-2xl sm:text-5xl text-white tracking-wider bg-blue_ribbon hover:bg-blue_ribbon_transparent rounded-full sm:rounded-[2.5rem] shadow-category uppercase py-5"
+                initial={{ y: 0 }}
+                whileHover={{ y: -20 }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                   { category }
-                </button>
+                </motion.button>
               </Link>
             )
           })}
