@@ -13,7 +13,7 @@ function HowToPlay() {
         <h2 className="hidden sm:block lg:hidden sm:text-8xl text-blue_ribbon">{ number }</h2>
         <div className="flex sm:flex-col items-center sm:items-start lg:items-center gap-8 sm:gap-4 lg:gap-12">
           <h2 className="text-2xl sm:hidden lg:block lg:text-8xl text-blue_ribbon">{ number }</h2>
-          <h3 className="text-2xl sm:text-4xl lg:text-5xl text-deep_koamaru tracking-wide uppercase">{ t(`${title}`) }</h3>
+          <h3 className="text-2xl sm:text-4xl lg:text-5xl text-center text-deep_koamaru tracking-wide uppercase">{ t(`${title}`) }</h3>
           <span className="hidden sm:block lg:w-[16.5rem] text-xl lg:text-2xl lg:text-center text-purple_mountains_majesty tracking-wider leading-6">{ t(`${text}`) }</span>
         </div>
         <span className="sm:hidden text-purple_mountains_majesty tracking-wider leading-5">{ t(`${text}`) }</span>
