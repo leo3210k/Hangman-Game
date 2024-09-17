@@ -12,6 +12,7 @@ import Home from './components/Home.tsx';
 import HowToPlay from './components/HowToPlay.tsx';
 import PickCategory from './components/PickCategory.tsx';
 import Game from './components/Game.tsx';
+import './i18n';
 
 const router = createBrowserRouter([
   {
