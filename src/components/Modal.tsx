@@ -14,6 +14,7 @@ import {
 import menu from "../assets/images/icons/icon-menu.svg";
 import Modes from "./utils/modes";
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 interface ModalProps {
   openMenu: boolean; 
@@ -23,10 +24,12 @@ interface ModalProps {
 }
 
 function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
+  const { t } = useTranslation();
+
   function currentTitle() {
-    if (mode === Modes.Playing) return "Paused";
-    else if (mode === Modes.Lost) return "You Lose";
-    else return "You Won";
+    if (mode === Modes.Playing) return t("Paused");
+    else if (mode === Modes.Lost) return t("You Lose");
+    else return t("You Won");
   }
 
   return (
@@ -50,7 +53,7 @@ function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
                   initial={{ y: 0 }}
                   whileHover={{ scale: 1.1, y: 15 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-                  play again
+                  { t("Play Again") }
                 </motion.button>
               </DialogClose>
             ) : (
@@ -59,7 +62,7 @@ function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
                 initial={{ y: 0 }}
                 whileHover={{ scale: 1.1, y: 15 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-                  continue
+                  { t("Continue") }
                 </motion.button>
               </DialogClose>
             )}
@@ -68,7 +71,7 @@ function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
               initial={{ y: 0 }}
               whileHover={{ scale: 1.1, y: 15 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-                new category
+                { t("New category") }
               </motion.button>
             </Link>
             <Link to="/">
@@ -76,7 +79,7 @@ function Modal({ openMenu, setOpenMenu, mode, playAgain }: ModalProps) {
               initial={{ y: 0 }}
               whileHover={{ scale: 1.1, y: 15 }}
               transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-                quit game
+                { t("Quit game") }
               </motion.button>
             </Link>
           </DialogDescription>

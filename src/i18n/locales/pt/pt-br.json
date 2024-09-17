@@ -1,5 +1,24 @@
 {
   "translation": {
-    "test": "teste"
+    "how to play": "Como Jogar",
+    "Pick a category": "Escolha uma Categoria",
+    "Pick a category text": "Primeiro, escolha uma categoria de palavras, como animais ou filmes. O computador então seleciona aleatoriamente uma palavra secreta desse tópico e mostra espaços em branco para cada letra da palavra.",
+    "Guess letters": "Adivinhe Letras",
+    "Guess letters text": "Turnos para adivinhar letras. O computador preenche os espaços relevantes se seu palpite estiver correto. Se estiver errado, você perde vida, que esgota após oito palpites incorretos.",
+    "Win or lose": "Ganhar ou Perder",
+    "Win or lose text": "Você ganha ao adivinhar todas as letras da palavra antes de perder toda a vida. Se a barra de vida esvaziar antes de adivinhar a palavra, você perde.",
+    "movies": "filmes",
+    "tv shows": "séries",
+    "countries": "países",
+    "capital cities": "capitais",
+    "animals": "animais",
+    "sports": "esportes",
+    "Paused": "Pausado",
+    "You Won": "Você Ganhou",
+    "You Lose": "Você Perdeu",
+    "Continue": "continuar",
+    "Play Again": "jogar novamente",
+    "New category": "nova categoria",
+    "Quit game": "sair do jogo"
   }
 }

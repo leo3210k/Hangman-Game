@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 
 import back from '../assets/images/icons/icon-back.svg';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 function PickCategory() {
+  const { t } = useTranslation();
+
   const categories = [
     "movies",
     "tv shows",
@@ -35,7 +38,7 @@ function PickCategory() {
                 initial={{ y: 0 }}
                 whileHover={{ y: -20 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-                  { category }
+                  { t(`${category}`) }
                 </motion.button>
               </Link>
             )

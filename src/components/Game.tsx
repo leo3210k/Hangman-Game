@@ -8,8 +8,11 @@ import Letters from './Letters';
 import Alphabet from './Alphabet';
 import Modal from './Modal';
 import Modes from './utils/modes';
+import { useTranslation } from 'react-i18next';
 
 function Game() {
+  const { t } = useTranslation();
+
   const [openMenu, setOpenMenu] = useState(false);
   const [mode, setMode] = useState<Modes>(Modes.Playing);
 
@@ -130,7 +133,7 @@ function Game() {
         <div className="w-full flex justify-between items-center gap-4">
           <div className="flex items-center gap-4 sm:gap-10">
             <Modal openMenu={openMenu} setOpenMenu={setOpenMenu} mode={mode} playAgain={resetGame}/>
-            <h1 className="text-5xl lg:text-8xl text-white bg-clip-text capitalize">{category.replace("_", " ")}</h1>
+            <h1 className="text-5xl lg:text-8xl text-white bg-clip-text capitalize">{ t(`${category.replace("_", " ")}`) }</h1>
           </div>
           <div className="flex items-center gap-4 sm:gap-7">
             <progress value="100" max="100" className="w-16 sm:w-24 h-3 sm:h-[0.85rem] bg-white rounded-full p-[2px]"></progress>
