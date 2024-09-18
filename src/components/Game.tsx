@@ -140,7 +140,7 @@ function Game() {
             <img src={heart} alt="heart" className="w-10 sm:w-14" />
           </div>
         </div>
-        <Letters chosenWord={chosenWord} />
+        <Letters chosenWord={t(`${chosenWord}`)} />
         <Alphabet onClick={verifyChosenLetter}/>
       </div>
     </div>
