@@ -28,7 +28,7 @@ function Game() {
   
   useEffect(() => {
     if (location.state?.category) {
-      const word = getRandomWord(category);
+      const word = t(`${getRandomWord(category)}`);
       setChosenWord(word);
 
       setRemainingLetters(word.replace(/_/g, ""));
@@ -140,7 +140,7 @@ function Game() {
             <img src={heart} alt="heart" className="w-10 sm:w-14" />
           </div>
         </div>
-        <Letters chosenWord={t(`${chosenWord}`)} />
+        <Letters chosenWord={chosenWord} />
         <Alphabet onClick={verifyChosenLetter}/>
       </div>
     </div>
